@@ -6,10 +6,10 @@ public partial class Player : CharacterBody2D
     [Export]
     public PackedScene Test { get; set; }
 
-	public override void _Ready()
-	{
-		
-	}
+    public override void _Ready()
+    {
+        // not doing anything in the setup yet
+    }
 
     public override void _Process(double delta)
     {

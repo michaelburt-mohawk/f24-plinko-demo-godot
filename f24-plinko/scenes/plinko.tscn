@@ -16,6 +16,7 @@ size = Vector2(800, 50)
 position = Vector2(542, 123)
 script = ExtResource("1_q7qqm")
 Test = ExtResource("3_6b3p6")
+Speed = 200.0
 
 [node name="Rectangle" type="Node2D" parent="Player"]
 script = ExtResource("2_r88ur")
@@ -41,4 +42,5 @@ shape = SubResource("RectangleShape2D_t1mi3")
 [node name="Label" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
-text = "Press spacebar to drop coins (one at a time)"
+text = "Press spacebar to drop coins (one at a time)
+Move player (red box) left/right with A and D keys"

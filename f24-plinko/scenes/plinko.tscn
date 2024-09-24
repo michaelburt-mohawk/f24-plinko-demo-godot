@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://0s0vbq2wervh"]
+
+[ext_resource type="Script" path="res://scenes/Player.cs" id="1_q7qqm"]
+[ext_resource type="Script" path="res://addons/2d_shapes/shapes/Rectangle.gd" id="2_r88ur"]
+[ext_resource type="PackedScene" uid="uid://poqa0t3mf7rd" path="res://scenes/coin.tscn" id="3_6b3p6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ssvd"]
+size = Vector2(50, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t1mi3"]
+size = Vector2(800, 50)
+
+[node name="Plinko" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(542, 123)
+script = ExtResource("1_q7qqm")
+Test = ExtResource("3_6b3p6")
+
+[node name="Rectangle" type="Node2D" parent="Player"]
+script = ExtResource("2_r88ur")
+size = Vector2(50, 50)
+fill_color = Color(1, 0, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("RectangleShape2D_5ssvd")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(541, 465)
+rotation = 0.162381
+collision_layer = 3
+collision_mask = 3
+
+[node name="Rectangle" type="Node2D" parent="StaticBody2D"]
+script = ExtResource("2_r88ur")
+size = Vector2(800, 50)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_t1mi3")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Press spacebar to drop coins (one at a time)"

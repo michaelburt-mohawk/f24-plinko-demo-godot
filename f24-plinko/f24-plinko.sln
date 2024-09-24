@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "f24-plinko", "f24-plinko.csproj", "{FAF9B44B-4DBF-4EF0-958F-6EFF06F6EBE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAF9B44B-4DBF-4EF0-958F-6EFF06F6EBE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF9B44B-4DBF-4EF0-958F-6EFF06F6EBE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF9B44B-4DBF-4EF0-958F-6EFF06F6EBE5}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{FAF9B44B-4DBF-4EF0-958F-6EFF06F6EBE5}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{FAF9B44B-4DBF-4EF0-958F-6EFF06F6EBE5}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{FAF9B44B-4DBF-4EF0-958F-6EFF06F6EBE5}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
